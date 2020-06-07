@@ -9,6 +9,9 @@ use strict;
 use warnings;
 use parent 'ColorThemeBase::Constructor';
 
+# TODO: allow some colors to have a different saturation, like in
+# color.adobe.com
+
 our %THEME = (
     v => 2,
     summary => 'Create color theme using analogous color harmony rule',
