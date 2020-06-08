@@ -7,7 +7,7 @@ package ColorTheme::Harmony::Analogous;
 
 use strict;
 use warnings;
-use parent 'ColorThemeBase::Constructor';
+use parent 'ColorThemeBase::Static::FromObjectColors';
 
 # TODO: allow some colors to have a different saturation, like in
 # color.adobe.com
@@ -80,19 +80,8 @@ sub new {
         $colors{"color" . ($i_central+$i)} = Color::RGB::Util::hsv2rgb(sprintf "%d %.4f %.4f", $central_h+$i*$h_distance, $s, $v);
     }
 
-    $self->{_colors} = \%colors;
+    $self->{colors} = \%colors;
     $self;
-}
-
-sub get_color_list {
-    my $self = shift;
-    my @list = sort keys %{ $self->{_colors} };
-    wantarray ? @list : \@list;
-}
-
-sub get_color {
-    my ($self, $name, $args) = @_;
-    $self->{_colors}{$name};
 }
 
 1;
