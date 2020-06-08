@@ -14,7 +14,7 @@ use parent 'ColorThemeBase::Static::FromObjectColors';
 
 our %THEME = (
     v => 2,
-    summary => 'Create color theme using analogous color harmony rule',
+    summary => 'Create theme with colors equidistant in hue',
     description => <<'_',
 
 This color theme has a central color (e.g. for 5 colors, `color3`) with the hue
@@ -85,10 +85,7 @@ sub new {
 }
 
 1;
-# ABSTRACT: Create color theme using analogous color harmony rule
-
-=head1 DESCRIPTION
-
+# ABSTRACT:
 
 =head1 SEE ALSO
 
