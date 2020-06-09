@@ -26,7 +26,7 @@ Example, for 5 colors, *central_h* of 120 (green) and *h_distance* of 35 then
 `color3` will have hue 120, `color2` 90, `color1` 60, `color4` 150, `color5`
 180. You can see this on the terminal with:
 
-    % show-color-theme-swatch Harmony::Analogous -A central_h=120 -A h_distance=35 -A s=0.8
+    % show-color-theme-swatch Harmony::Analogous=central_h,120,h_distance,35,s,0.8
 
 _
     dynamic => 1,
