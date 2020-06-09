@@ -80,7 +80,7 @@ sub new {
         $colors{"color" . ($i_central+$i)} = Color::RGB::Util::hsv2rgb(sprintf "%d %.4f %.4f", $central_h+$i*$h_distance, $s, $v);
     }
 
-    $self->{colors} = \%colors;
+    $self->{items} = \%colors;
     $self;
 }
 
