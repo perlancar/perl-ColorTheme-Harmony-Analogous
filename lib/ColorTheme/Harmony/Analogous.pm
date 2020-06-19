@@ -57,6 +57,12 @@ _
             default => 1,
         },
     },
+    examples => [
+        {
+            summary => 'An analogous theme around red',
+            args => {central_h=>0},
+        },
+    ],
 );
 
 sub new {
